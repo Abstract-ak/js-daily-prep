@@ -48,3 +48,38 @@ let b = "5" - 3;
 console.log(a, b); // "53", 2
 ```
 ````
+
+---
+
+## ✅ Step 5: Push Your Changes
+
+After adding files:
+
+```bash
+git add .
+git commit -m "Day 1: Added learning notes and mini project structure"
+git push origin main
+```
+
+# JavaScript Interview Prep
+
+Welcome to my daily prep repo for JavaScript!
+
+## 📅 Daily Learning Logs
+
+- [Day 1](daily-learning/day1.md)
+- [Day 2](daily-learning/day2.md)
+
+## 🧪 Quizzes
+
+- [Day 1 Quiz](quizzes/day1-quiz.md)
+
+## 🛠️ Mini Projects
+
+- [To-Do List](mini-projects/to-do-list/)
+- [Calculator](mini-projects/calculator/)
+
+## 🧠 Notes
+
+- [Array Methods](notes/array-methods.md)
+- [Async JavaScript](notes/async-js.md)
