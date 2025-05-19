@@ -124,6 +124,8 @@ let greet = function () {
 
 **Type coercion** is the process of converting a value from one type to another (e.g., string to number).
 
+**coercion** ➡️meaning: conversion. i.e type conversion.
+
 ### 1. **Implicit Coercion**
 
 Automatically performed by JavaScript.
