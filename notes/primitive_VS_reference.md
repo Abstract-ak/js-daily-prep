@@ -190,18 +190,30 @@ let b = a; // copy
 
 ### For Reference:
 
-#### Shallow Copy
+#### Shallow Copy 🧻📄🧷
+
+A shallow copy creates a new object and copies over the values of all top-level properties from the original. However, if those properties are themselves reference types (like nested objects), only the reference is copied.
 
 ```js
-const original = { name: "Akash" };
+const original = { name: "Akash", address: { city: "Delhi" } };
 const copy = { ...original };
+copy.address.city = "Mumbai";
+console.log(original.address.city); // "Mumbai" (because address is a shared reference)
 ```
 
-#### Deep Copy (using JSON)
+#### Deep Copy (using JSON) 🌊📦🧬
+
+A deep copy recursively copies all nested objects and arrays, creating entirely new references. This means that changes to the copied object do not affect the original. However, this method only works if the object is JSON-serializable (no functions, `undefined`, or symbols). 🛠️
 
 ```js
+const original = { name: "Akash", address: { city: "Delhi" } };
 const deepCopy = JSON.parse(JSON.stringify(original));
+deepCopy.address.city = "Mumbai";
+console.log(original.address.city); // "Delhi" (no mutation)
 ```
+
+> ✅ Use deep copy when you need complete separation between the original and the copied object.
+> ⚠️ Be cautious of performance and limitations with JSON-based deep copies.
 
 ---
 
